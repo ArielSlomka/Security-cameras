@@ -1,11 +1,14 @@
 @import "./utils/vars";
 
-* {
+*{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
 
+body {
+    background-color: #aaaaaa7e;
 }
 
 .header {
@@ -15,24 +18,113 @@ font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
     display: flex;
     min-height: 100vh;
-    align-items: center;
     
+    &__titulo {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        font-size: $letra-xxl;
+        text-align: center;
+        text-shadow: 0 0 25px #111;
+        transition: opacity 0.5s;
+    }
 }
 
-.titulo {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    font-size: $letra-xxl;
-    text-align: center;
-    text-shadow: 0 0 25px #111;
-    transition: opacity 0.5s;
-    
-}
-
-.titulo:hover {
+.header__titulo:hover {
     opacity: 0.3;
+    
 }
 .navbar {
-    display: flex;
+    background-color: #393636fa;
+    position: sticky;
+    top: 0;
+    font-weight: 600;
+    font-size: $letra-m;
+    z-index: 10;
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        color: #fff;
+    }
+
+    &__item, a {
+        list-style: none;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        text-shadow: 0 0 25px #222;
+    }
+}
+
+a:hover {
+    background-color: #6b6666fa;
+    opacity: 0.6;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.box {
+    max-width: 1200px;
+    max-height: 800px;
+    margin: auto;
+
+    &__title {
+        text-align: center;
+        padding: 45px;
+        color: #fff;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__image-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        background-color: $color-cinco;
+        border-radius: 50%;
+        margin: 5px;
+        padding: 35px;
+        
+    }
+
+    &__image {
+        max-width: 100%;
+        height: 500px;
+        object-fit: cover;
+        overflow: hidden;
+        z-index: 5;
+        border-radius: 70px;
+        
+    }
+
+    &__text {
+        text-align: center;
+        align-content: center;
+        text-wrap: pretty;
+        color: #fff;
+    }
+}
+
+#camaras {
+    background-color: $color-uno;
+}
+
+#alarmas {
+    background-color: $color-cinco;
+}
+
+#cerco {
+    background-color: $color-tres;
+}
+
+#acceso {
+    background-color: $color-cuatro;
+}
+
+#contactame {
+    background-color: $color-dos;
+    height: 800px;
 }
