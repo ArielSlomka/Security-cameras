@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sergio Santi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,69 +14,95 @@
             <h2>seguridad electrónica</h2>
         </div>
     </header>
-    <nav class="navbar">
-        <ul class="navbar__list">
-            <li class="navbar__item"><a href="#camaras">Cámaras</a></li>
-            <li class="navbar__item"><a href="#alarmas">Alarmas</a></li>
-            <li class="navbar__item"><a href="#acceso">Control acceso</a></li>
-            <li class="navbar__item"><a href="#cerco">Cerco eléctrico</a></li>
-            <li class="navbar__item"><a href="#contactame">Contáctame</a></li>
+    <button id="open" class="open-menu"><i class="bi bi-list"></i></button>
+    <nav class="nav" id="nav">
+        <button id="close" class="close-menu"><i class="bi bi-x"></i></button>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#camaras">Cámaras</a></li>
+            <li class="nav__item"><a href="#alarmas">Alarmas</a></li>
+            <li class="nav__item"><a href="#acceso">Control acceso</a></li>
+            <li class="nav__item"><a href="#cerco">Cerco eléctrico</a></li>
+            <li class="nav__item"><a href="#contactame">Contáctame</a></li>
         </ul>
     </nav>
     <main>
         <section id="camaras" class="box">
-            <h2 class="box__title">
-                Cámaras de vigilancia</h2>
             <div class="box__content">
                 <div class="box__image-container"><img class="box__image" src="img/camara.png" alt="">
                 </div>
-                <p class="box__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, excepturi porro tenetur 
-                    accusantium quasi, explicabo quam consequatur qui dolorum non, illum deleniti id! Illum, facilis.</p>
-            </div>
-        </section>
-        <section id="acceso" class="box">
-            <h2 class="box__title">
-                Control de acceso</h2>
-            <div class="box__content">
-                <p class="box__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, excepturi porro tenetur 
-                    accusantium quasi, explicabo quam consequatur qui dolorum non, illum deleniti id! Illum, facilis.</p>
-                    <div class="box__image-container">
-                        <img class="box__image" src="img/camara.png" alt="">
+                <div class="box__text"> 
+                    <h2 class="box__title">
+                        Cámaras de vigilancia</h2>
+                        <p class="box__info">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, excepturi porro tenetur 
+                            accusantium quasi, explicabo quam consequatur qui dolorum non, illum deleniti id! Illum, facilis.</p>
                     </div>
             </div>
         </section>
-        <section id="cerco" class="box">
-            <h2 class="box__title">Cerco eléctrico</h2>
+        <section id="alarmas" class="box">
             <div class="box__content">
+                <div class="box__text">
+                    <h2 class="box__title">
+                        Alarmas</h2>
+                    <p class="box__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, excepturi porro tenetur 
+                        accusantium quasi, explicabo quam consequatur qui dolorum non, illum deleniti id! Illum, facilis.</p>
+                </div>
                 <div class="box__image-container">
                     <img class="box__image" src="img/camara.png" alt="">
                 </div>
-                <p class="box__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, excepturi porro tenetur 
-                    accusantium quasi, explicabo quam consequatur qui dolorum non, illum deleniti id! Illum, facilis.</p>
             </div>
         </section>
-        <section id="alarmas" class="box">
-            <h2 class="box__title">
-                Alarmas
-            </h2>
+        <section id="acceso" class="box">
+            
             <div class="box__content">
-                <p class="box__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, excepturi porro tenetur 
-                    accusantium quasi, explicabo quam consequatur qui dolorum non, illum deleniti id! Illum, facilis.</p>
                 <div class="box__image-container">
                     <img class="box__image" src="img/camara.png" alt="">
                 </div>
-                
+                <div class="box__text">
+                    <h2 class="box__title">Control de acceso</h2>
+                    <p class="box__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, excepturi porro tenetur 
+                        accusantium quasi, explicabo quam consequatur qui dolorum non, illum deleniti id! Illum, facilis.</p>
+                </div>
+            </div>
+        </section>
+        <section id="cerco" class="box">
+            <div class="box__content">
+                <div class="box__text">
+                    <h2 class="box__title">
+                        Cerco eléctrico
+                    </h2>
+                    <p class="box__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, excepturi porro tenetur 
+                        accusantium quasi, explicabo quam consequatur qui dolorum non, illum deleniti id! Illum, facilis.</p>
+                </div>
+                <div class="box__image-container">
+                    <img class="box__image" src="img/camara.png" alt="">
+                </div>
             </div>
         </section>
     </main>
     <footer id="contactame" class="footer">
-        <p>contactame</p>
-        <div  class="logo"></div>
-        <div class="social-media"></div>
+        <div class="ds-container">
+            <h3 class="footer__title">S S</h3>
+            <div class="footer__boxes">
+                <div class="footer__box">
+                    <h4 class="footer__subtitulo">Información de contacto</h4>
+                    <p>Telefono: 1155555555</p>
+                    <p>Mail: sergiosantiseguridad@hotmail.com</p>
+                </div>
+                <div class="footer__box">
+                    <h4 class="footer__subtitulo">Falopia redes</h4>
+                    <div class="footer__redes">
+                        <a href="https://www.instagram.com/sergiosantiseguridad/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61560595956367/" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="mailto:sergiosantiseguridad@gmail.com"><i class="bi bi-envelope"></i></a>
+                    </div> 
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="js.js"></script>
 </body>
 </html>
